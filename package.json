@@ -53,9 +53,7 @@
     "has-touch": "^1.0.1",
     "object-assign": "^4.1.0",
     "prop-types": "^15.5.10",
-    "react": "^15.6.2",
     "react-class": "^2.1.0",
-    "react-dom": "^15.6.2",
     "react-style-normalizer": "^1.2.7"
   },
   "peerDependencies": {
