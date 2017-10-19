@@ -48,13 +48,13 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
+    "@zippytech/react-load-mask": "https://github.com/zippytech/react-load-mask",
     "drag-helper": "^1.2.3",
     "has-touch": "^1.0.1",
     "object-assign": "^4.1.0",
+    "prop-types": "^15.5.10",
     "react-class": "^2.1.0",
-    "react-load-mask": "^2.0.1",
-    "react-style-normalizer": "^1.2.7",
-    "prop-types": "^15.5.10"
+    "react-style-normalizer": "^1.2.7"
   },
   "peerDependencies": {
     "react": ">=0.14.0 || >=15.0.0-0",

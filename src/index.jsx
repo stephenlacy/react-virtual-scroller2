@@ -5,7 +5,7 @@ import Component from 'react-class'
 import React from 'react';
 import { findDOMNode } from 'react-dom';
 
-const LoadMask   = require('react-load-mask')
+const LoadMask   = require('@zippytech/react-load-mask')
 const assign     = require('object-assign')
 const DragHelper = require('drag-helper')
 const normalize  = require('react-style-normalizer')
