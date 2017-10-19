@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zippyui/react-virtual-scroller.git"
+    "url": "https://github.com/stevelacy/react-virtual-scroller2.git"
   },
   "keywords": [
     "react",
@@ -30,9 +30,9 @@
   "author": "ZippyUI <contact@zippyui.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zippyui/react-virtual-scroller/issues"
+    "url": "https://github.com/stevelacy/react-virtual-scroller2.git"
   },
-  "homepage": "https://github.com/zippyui/react-virtual-scroller",
+  "homepage": "https://github.com/stevelacy/react-virtual-scroller2",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "babel": "^5.1.13",
