@@ -146,9 +146,9 @@ class Scroller extends Component {
     var events = {}
 
     if (!hasTouch){
-      events.onWheel = this.handleWheel
+      events.onWheel = this.handleWheel.bind(this)
     } else {
-      events.onTouchStart = this.handleTouchStart
+      events.onTouchStart = this.handleTouchStart.bind(this)
     }
 
     //extra div needed for SAFARI V SCROLL
@@ -339,7 +339,7 @@ class Scroller extends Component {
       width: props.scrollbarSize
     }
 
-    var onScroll = this.onVerticalScroll
+    var onScroll = this.onVerticalScroll.bind(this)
 
     return <div className="z-vertical-scrollbar" style={verticalScrollbarStyle}>
         <div
