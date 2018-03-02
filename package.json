@@ -54,6 +54,7 @@
     "object-assign": "^4.1.0",
     "prop-types": "^15.5.10",
     "react-class": "^2.1.0",
+    "react-dom": "^16.2.0",
     "react-style-normalizer": "^1.2.7"
   },
   "peerDependencies": {
