@@ -282,7 +282,7 @@ class Scroller extends Component {
   }
 
   componentWillReceiveProps(){
-    setTimeout(this.fixHorizontalScrollbar, 0)
+    this._timeout = setTimeout(this.fixHorizontalScrollbar, 0)
   }
 
   componentDidMount() {
@@ -290,7 +290,7 @@ class Scroller extends Component {
 
     ;(this.props.onMount || emptyFn)(this);
 
-    setTimeout(function(){
+    this._timeout = setTimeout(function(){
       this.fixHorizontalScrollbar();
     }.bind(this), 0)
   }
@@ -326,6 +326,7 @@ class Scroller extends Component {
     delete this.horizontalScrollerNode
     delete this.horizontalScrollbarNode
     delete this.verticalScrollbarNode
+    clearTimeout(this._timeout)
   }
 
   ////////////////////////////////////////////////
