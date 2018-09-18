@@ -377,16 +377,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'componentWillReceiveProps',
 	    value: function componentWillReceiveProps() {
-	      this._timeout = setTimeout(this.fixHorizontalScrollbar, 0);
+	      this.fixHorizontalScrollbar();
 	    }
 	  }, {
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      this.fixHorizontalScrollbar();(this.props.onMount || emptyFn)(this);
-
-	      this._timeout = setTimeout((function () {
-	        this.fixHorizontalScrollbar();
-	      }).bind(this), 0);
 	    }
 	  }, {
 	    key: 'fixHorizontalScrollbar',
@@ -424,7 +420,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      delete this.horizontalScrollerNode;
 	      delete this.horizontalScrollbarNode;
 	      delete this.verticalScrollbarNode;
-	      clearTimeout(this._timeout);
 	    }
 
 	    ////////////////////////////////////////////////
